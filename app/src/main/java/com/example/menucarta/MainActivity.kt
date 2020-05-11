@@ -85,4 +85,13 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
+    public fun btnCalcularClase_OnClick(v: View)
+    {
+
+            var oActivity:Intent=Intent(this,MenuCartaClase::class.java)
+            startActivity(oActivity)
+
+    }
+
 }
