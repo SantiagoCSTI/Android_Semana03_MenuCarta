@@ -1,4 +1,4 @@
-package com.example.menucarta
+package com.example.menucarta.bean
 
 import android.text.Editable
 

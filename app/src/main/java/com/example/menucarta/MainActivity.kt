@@ -89,8 +89,19 @@ class MainActivity : AppCompatActivity() {
     public fun btnCalcularClase_OnClick(v: View)
     {
 
-            var oActivity:Intent=Intent(this,MenuCartaClase::class.java)
+            var oActivity:Intent=Intent(this,
+                MenuCartaClase::class.java)
             startActivity(oActivity)
+
+    }
+
+
+    public fun btnllamarProveedor_OnClick(v: View)
+    {
+
+        var oActivity:Intent=Intent(this,
+            ListadoProveedor::class.java)
+        startActivity(oActivity)
 
     }
 

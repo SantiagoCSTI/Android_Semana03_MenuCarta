@@ -4,12 +4,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_main.*
+import com.example.menucarta.bean.MenuCarta
 import kotlinx.android.synthetic.main.activity_menu_carta_clase.*
 
 class MenuCartaClase : AppCompatActivity() {
 
-    lateinit var oMenuCarta:MenuCarta
+    lateinit var oMenuCarta: MenuCarta
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,10 +28,11 @@ class MenuCartaClase : AppCompatActivity() {
             Toast.makeText(baseContext,"Por favor ingresar la Cantidad",Toast.LENGTH_LONG).show()
             return false
         }
-        oMenuCarta = MenuCarta(this.EdtDetallePedidoCL.text.toString(),
-        this.EdtCostoCL.text.toString().toDouble(),
-        this.EdtCantidadCL.text.toString().toDouble(),
-        this.chkDEliveryCL.isChecked
+        oMenuCarta = MenuCarta(
+            this.EdtDetallePedidoCL.text.toString(),
+            this.EdtCostoCL.text.toString().toDouble(),
+            this.EdtCantidadCL.text.toString().toDouble(),
+            this.chkDEliveryCL.isChecked
         )
         oMenuCarta.CalcularPago()
         return true

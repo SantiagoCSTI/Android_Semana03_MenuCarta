@@ -137,6 +137,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="numberSigned" />
+
     </TableRow>
 
     <TableRow
@@ -174,6 +175,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/logocibertec" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnllamarProveedor_OnClick"
+            android:text="Proveedor" />
     </TableRow>
 
     <TableRow

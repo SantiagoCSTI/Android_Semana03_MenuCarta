@@ -1,8 +1,9 @@
-package com.example.menucarta
+package com.example.menucarta.bean
 
 public class Alumno {
     var Nombres: String = ""
     var Apellidos: String = ""
+    var DNI: String = ""
     var Curso: String = ""
     var Nota1: Double = 0.0
     var Nota2: Double = 0.0
@@ -18,6 +19,7 @@ public class Alumno {
         this.Nota2 = 0.0
         this.Nota3 = 0.0
         this.Nota4 = 0.0
+        this.DNI = ""
     }
 
     fun NombresCompleto():String
